@@ -1,0 +1,245 @@
+:root {
+    --blau:hsl(223, 87%, 63%);
+    --paleB: hsl(223, 100%, 88%);
+    --rojoClar:hsl(354, 100%, 66%);
+    --gris:hsl(0, 0%, 59%);
+    --blauFosc:hsl(209, 33%, 12%);
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body,
+html {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    width:100vw;
+    background-color: white;
+    
+}
+
+
+.container1 {
+    margin:5% auto;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white; 
+    font-family: "Libre Franklin", sans-serif;
+}
+
+/*heading area*/
+
+.heading-area {
+    margin-top: 5rem;
+}
+
+.icon-area img{
+    left: 8.6rem;    
+    top: 6rem;
+}
+
+.text-area {
+    padding-top:2rem;
+}
+
+.text-area h1 {
+    font-size: 1.8rem;
+}
+
+#text {
+    padding-top: 0.5rem;
+    font-weight: 100;
+    margin-bottom: 3rem;
+ }
+
+ form{
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+}
+
+input{
+    padding: 1rem;
+    width: 80%;
+    height:20px;
+    margin:0 auto 10px auto;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 32px;
+  }
+
+
+  #error-message{
+    margin-top: -66px;
+    font-size: 8px;
+    color:red;
+    font-weight: 200;
+    font-style: italic;
+    display: none;
+
+}
+
+
+button {
+    width:85%;
+    height:54px;
+    margin: 3% auto 0 auto;
+    background-color:hsl(223, 87%, 63%);
+    color:aliceblue;
+    font-weight: 600;
+    border-style:none;
+    border-radius: 32px;
+    padding: 1rem;
+    box-shadow: 0 8px 8px #80008029;
+}
+
+button:hover{
+    background-color:hsl(223, 100%, 88%);;
+}
+
+/*foto area*/
+
+
+.foto-area {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto {
+    width: 100%;
+    padding-top: 14rem;
+    margin-bottom:7rem;
+    margin:auto;
+}
+
+
+/* Social Media Icons */
+
+
+.fa {
+    padding: 6px;
+    font-size: 30px;
+    width: 52px;
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid hsl(0, 0%, 59%);
+    margin-top: 150px;
+    
+    
+  
+    
+  }
+  
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  
+  .fa-facebook {
+      background: white;
+      color: #3B5998;
+    }
+  
+    
+    .fa-twitter {
+      background: white;
+      color: #55ACEE;
+    }
+  
+    
+    .fa-instagram {
+      background:white;
+      color:  #125688;
+    }
+
+
+
+    /*copyright*/
+
+  .copy {
+    margin-top:3rem;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 59%);
+  }
+
+  footer{
+    margin-top:18px;
+  }
+
+
+   /*desktop view*/
+
+
+   @media screen and (min-width: 800px) {
+    body {
+        height: 100vh;
+    }
+
+    .container1 {
+        width: 75%;
+        display: flex;
+
+    }
+    .text-area h1 {
+        font-size: 3.8rem;
+    }
+    #text {
+       padding-top: 0rem;
+       margin-top: 1rem;
+       font-size: 1.5rem;
+     }
+
+     form {
+        flex-direction: row;
+    }
+    input {
+        width:24%;
+        padding:1.7rem;
+        margin:0 0 0 auto;
+    }
+    #error-message{
+        font-size: 10px;
+        font-style: italic;
+        margin-top: 0px;
+        margin-right: 21rem;
+        font-weight: 200;
+    }
+    button{
+        width:11%;
+        margin: 0 auto 0 35px;
+        padding:1.4rem 0rem 2.4rem 1.7rem;
+        font-size:16px;
+    }
+
+    .foto-area img {
+        width: 41%;
+    }
+    .fa{
+        margin-right: auto;
+        
+    }
+   }
+  
+
+
+
+
+
+
+  
+
